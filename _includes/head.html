@@ -1,16 +1,3 @@
-{% include head.html %}
-
-<!-- MathJax configuration -->
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    macros: {
-      RR: "{\\mathbb{R}}"   // Add \RR macro
-    }
-  }
-};
-</script>
-
-<!-- Load MathJax -->
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% if page.mathjax %}
+  {% include mathjax.html %}
+{% endif %}
