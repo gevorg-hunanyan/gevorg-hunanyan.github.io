@@ -35,6 +35,19 @@
     {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
     <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- MathJax configuration -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          macros: {
+            RR: "{\\mathbb{R}}"
+          }
+        }
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
 
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
