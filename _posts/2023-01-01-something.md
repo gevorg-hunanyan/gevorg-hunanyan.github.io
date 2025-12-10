@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Something
 categories:
 - General
 feature_image: "https://picsum.photos/2560/600?image=872"
@@ -14,3 +14,5 @@ a^2 + b^2 = c^2
 $$
 
 Here is some bold text: **important**
+
+Some inline math: $a^2+b^2=c^2$.
